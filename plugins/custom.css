@@ -1,0 +1,116 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 20;
+}
+
+.section-content {
+    display: flex;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 30;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+    background-color: #1e293b!important ;
+}
+
+.sidebar .brand {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1.2px solid #dedede;
+}
+
+.section-content .container {
+    position: fixed;
+    left: 260px;
+    width: calc(100vw - 260px);
+    height: 100vh;
+    top: 50px;
+    padding-bottom: 57px;
+    overflow-y: auto;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-menu .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #64748b;
+}
+
+.sidebar-menu .sidebar-items a {
+    display: flex;
+    align-items: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    color: #64748b;
+    transition: all .2s linear;
+    font-size: 16px;
+}
+
+.sidebar-menu .sidebar-items a:hover,
+.sidebar-menu .sidebar-items a:focus {
+    background-color: #0f172a;
+    color: #3b82f6;
+}
+
+.sidebar-menu .sidebar-items a i {
+    display: block;
+    padding: 0;
+    margin: 0 24px 0 0;
+    font-size: 20px;
+}
+
+.sidebar-menu .sidebar-items a span {
+    display: block;
+    font-size: 14px;
+}
+
+/* collapse-menu */
+.collapse-menu{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+.collapse-menu li a{
+    display: flex;
+    align-items: center;
+    padding: 12px 32px !important;
+    margin: 0 !important;
+    color: #FFFFFF;
+}
